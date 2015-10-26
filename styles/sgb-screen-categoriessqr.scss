@@ -1,0 +1,31 @@
+//Define any sass variables and styles here.
+//They may be overridden by the application using the screen.
+
+$myColor: #00dda0;
+$categoryColor: rgba(0, 0, 0, .5);
+$categoryBorderColor: white;
+$categoryIconColor: white;
+
+
+.customHeader {
+  color: $myColor;
+}
+
+.category {
+	width: 50%;
+	height: 30vh;
+	background: $categoryColor;
+	text-align:center;
+	padding-top: 15%;
+	display: inline-block;
+	border-bottom: solid 1px $categoryBorderColor;
+}
+
+.category:nth-child(2n+1) {
+	border-right: solid 1px $categoryBorderColor;
+}
+
+i.category_icon {
+	font-size: 90px;
+	color: $categoryIconColor;
+}

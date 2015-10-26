@@ -1,0 +1,7 @@
+<ion-view mz-screen view-title="{{ title | translate }}">
+    <ion-content>
+        <div ng-repeat="category in categories" class="category">
+        	<i class="category_icon" ng-class="addProp(category.id)" ng-click="itemClickHandler(category.id)"></i>
+        </div>
+    </ion-content>
+</ion-view>
